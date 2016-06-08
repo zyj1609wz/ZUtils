@@ -11,10 +11,17 @@
         android:orientation="vertical"
         >
 
-        <Button
+        <TextView
             android:id="@+id/threadUtil"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="ThreadUtilActivity"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:background="#666666"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            />
 
 
 
