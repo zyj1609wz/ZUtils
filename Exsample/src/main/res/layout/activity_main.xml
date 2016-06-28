@@ -35,7 +35,17 @@
             android:layout_marginTop="10dp"
             />
 
-
+        <TextView
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TabActivity"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:background="#666666"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            />
 
     </LinearLayout>
 

@@ -26,5 +26,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity( new Intent( MainActivity.this , TimerActivity.class ));
             }
         });
+
+        findViewById( R.id.tab ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity( new Intent( MainActivity.this , TabActivity.class ));
+            }
+        });
     }
 }
