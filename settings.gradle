@@ -1,1 +1,1 @@
-include ':Exsample', ':ZUtil'
+include ':Exsample', ':ZUtil', ':BitMap'

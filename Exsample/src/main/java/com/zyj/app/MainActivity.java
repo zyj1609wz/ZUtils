@@ -19,5 +19,12 @@ public class MainActivity extends AppCompatActivity {
               startActivity( new Intent( MainActivity.this , ThreadUtilActivity.class ));
             }
         });
+
+        findViewById( R.id.time ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity( new Intent( MainActivity.this , TimerActivity.class ));
+            }
+        });
     }
 }
