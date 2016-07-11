@@ -33,5 +33,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity( new Intent( MainActivity.this , TabActivity.class ));
             }
         });
+
+        findViewById( R.id.notification ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity( new Intent( MainActivity.this , NotificationActivity.class ));
+            }
+        });
     }
 }

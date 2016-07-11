@@ -21,6 +21,7 @@
         <activity android:name=".ThreadUtilActivity" />
         <activity android:name=".TimerActivity" />
         <activity android:name=".TabActivity" />
+        <activity android:name=".NotificationActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#666666"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/noti_lin1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/no_ssid_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:text="开关"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:id="@+id/noti_wifi_image"
+                    android:layout_above="@id/no_ssid_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/notifi_open"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="#7c077db1"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@null"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/noti_lin2"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:paddingBottom="8dp"
+            >
+
+            <TextView
+                android:id="@+id/no_sign_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="信号强度"
+                android:textColor="#ffffff"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="4dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_signal"
+                android:layout_above="@id/no_sign_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:textSize="14.0sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/noti_lin3"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            >
+
+            <TextView
+                android:id="@+id/no_tiem_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                android:textColor="#ffffff"
+                android:singleLine="true"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="4dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_above="@id/no_tiem_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/noti_lin4"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingBottom="4dp"
+            >
+
+            <ImageView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_notification_home"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/noti_lin5"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon_notification_close"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

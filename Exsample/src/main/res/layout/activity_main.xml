@@ -47,6 +47,18 @@
             android:layout_marginTop="10dp"
             />
 
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="常驻通知栏"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:background="#666666"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            />
+
     </LinearLayout>
 
 </RelativeLayout>
