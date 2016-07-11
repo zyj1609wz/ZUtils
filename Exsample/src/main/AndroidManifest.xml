@@ -4,6 +4,8 @@
 
     <!-- To access Google+ APIs: -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DISABLE_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"></uses-permission>
 
     <application
         android:allowBackup="true"
