@@ -85,6 +85,7 @@ public class NotificationActivity extends AppCompatActivity {
                     case R.id.noti_lin1:
                         Toast.makeText( NotificationActivity.this, "点击1", Toast.LENGTH_SHORT).show();
                         Intent intent1 = new Intent( NotificationActivity.this , MainActivity.class ) ;
+                        intent1.putExtra( "tag" , true ) ;
                         intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity( intent1 );
                         break;
@@ -92,27 +93,23 @@ public class NotificationActivity extends AppCompatActivity {
                         collapseStatusBar();
                         Toast.makeText( NotificationActivity.this, "点击2", Toast.LENGTH_SHORT).show();
                         Intent intent2 = new Intent( NotificationActivity.this , MainActivity.class ) ;
+                        intent2.putExtra( "tag" , true ) ;
                         intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity( intent2 );
                         break;
                     case R.id.noti_lin3:
                         Toast.makeText( NotificationActivity.this, "点击3", Toast.LENGTH_SHORT).show();
-                        Intent intent3 = new Intent( NotificationActivity.this , MainActivity.class ) ;
-                        intent3.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity( intent3 );
                         break;
 
                     case R.id.noti_lin4:
                         collapseStatusBar();
                         Toast.makeText( NotificationActivity.this, "点击4", Toast.LENGTH_SHORT).show();
-                        Intent intent4 = new Intent( NotificationActivity.this , MainActivity.class ) ;
-                        intent4.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity( intent4 );
                         break;
                     case R.id.noti_lin5:
                         collapseStatusBar();
                         Toast.makeText( NotificationActivity.this, "点击5", Toast.LENGTH_SHORT).show();
                         Intent intent5 = new Intent( NotificationActivity.this , MainActivity.class ) ;
+                        intent5.putExtra( "tag" , true ) ;
                         intent5.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity( intent5 );
                         break;
