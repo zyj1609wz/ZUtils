@@ -10,6 +10,7 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.RemoteViews;
 import android.widget.Toast;
 
@@ -60,7 +61,15 @@ public class NotificationActivity extends AppCompatActivity {
         initClick( R.id.noti_lin4 , 4 );
         initClick( R.id.noti_lin5 , 5 );
 
-        notificationManager.notify( 100 , notification );
+        notificationManager.notify( notificationID , notification );
+
+        findViewById( R.id.bt ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                remoteViews.setTextViewText( R.id.tv_time , "我要改时间了");
+                notificationManager.notify( notificationID , notification );
+            }
+        });
 
     }
 
